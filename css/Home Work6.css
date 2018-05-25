@@ -209,10 +209,7 @@ span{
 }
 
 .signs__section__heading{
-    /* text-align: center;
-    top:100%;
-    text-decoration: underline;
-    margin:30px;  */
+  
     color:  #868686;
     font-size: 28px;
     font-weight: 500;
@@ -261,11 +258,77 @@ span{
     
 }
 
-.signs__section__header{
-    text-align: center;
-    color:rgba(137,137,137)
 
+
+/*clients__header*/
+.signs__section__header__clients{
+    text-align: center;
+    color:rgba(137,137,137);
+    position:relative; 
 }
+
+.signs__section__header__clients:before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    left: 41%;
+    border-bottom: 1px solid grey;  
+}
+/*--clients__header--*/
+/*branding__header*/
+.signs__section__header__branding{
+    text-align: center;
+    color:rgba(137,137,137);
+    position:relative;  
+}
+.signs__section__header__branding:before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    left: 41%;
+    border-bottom: 1px solid grey;  
+}
+/*--branding__header--*/
+
+/*marketing__header*/
+.signs__section__header__marketing{
+    text-align: center;
+    color:rgba(137,137,137);
+    position:relative;
+}
+.signs__section__header__marketing:before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    left: 41%;
+    border-bottom: 1px solid grey;  
+}
+/*--marketing__header--*/
+
+/*ADV__header*/
+.signs__section__header__ADV{
+    text-align: center;
+    color:rgba(137,137,137);
+    position:relative;
+}
+
+.signs__section__header__ADV:before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    left: 41%;
+    border-bottom: 1px solid grey;
+}
+/*--ADV__header--*/
+
 .image4{
     align-items: center;
     left:50%;
@@ -304,8 +367,12 @@ span{
         margin-top:14px;
         margin-left:25px;
      }
-
-     .signs__hexagons__div:hover{
+     .signs__hexagons:hover .signs__hexagons__div
+     {
+         background: #fff;
+     }
+      /*????????????????????????????????????????????????????????????????????????*/
+     /* .signs__hexagons__div:hover{
          background-color:white;
          cursor: pointer;
      }
@@ -325,4 +392,109 @@ span{
         transform:rotate(60deg);
         margin-top:14px;
         margin-left:25px;
+     }  */
+     .hexagon__icon .signs__hexagons__div:nth-child(2) .signs__hexagons__div:nth-child(3) :hover {
+         background-color: white;
      }
+      /*????????????????????????????????????????????????????????????????????????*/
+
+
+
+     /*branding*/
+
+     .hexagons__branding__div{
+        position: absolute;
+        width: 116px;
+        height: 65px;
+        border: 5px solid rgb(252,124,121);
+        border-top: none;
+        border-bottom: none;
+        left: 533px;
+        top: 400px;
+        background-color:rgb(252,81,77);
+     }
+
+     .hexagons__branding__div:nth-child(2) {
+        transform: rotate(60deg);
+        
+     }
+     .hexagons__branding__div:nth-child(3) {
+        transform: rotate(-60deg);
+         
+     }
+
+     /*--branding--*/
+
+     /*marketing*/
+     .hexagons__marketing__div{
+        position: absolute;
+        width: 116px;
+        height: 65px;
+        border: 5px solid rgb(252,124,121);
+        border-top: none;
+        border-bottom: none;
+        left: 850px;
+        top: 400px;
+        background-color:rgb(252,81,77);
+     }
+
+     .hexagons__marketing__div:nth-child(2) {
+        transform: rotate(60deg);
+        
+     }
+     .hexagons__marketing__div:nth-child(3) {
+        transform: rotate(-60deg);
+         
+     }
+     /*--marketing--*/
+
+     /*ADV*/
+     .hexagons__ADV__div{
+        position: absolute;
+        width: 116px;
+        height: 65px;
+        border: 5px solid rgb(252,124,121);
+        border-top: none;
+        border-bottom: none;
+        left: 1158px;
+        top: 400px;
+        background-color:rgb(252,81,77);
+     }
+     .hexagons__ADV__div:nth-child(2) {
+        transform: rotate(60deg);
+        
+     }
+     .hexagons__ADV__div:nth-child(3) {
+        transform: rotate(-60deg);
+         
+     }
+
+     /*Expand your business*/
+
+     .main__expand{
+        width: 100%;
+        height: 765px;
+        margin: 0 auto;
+        position: relative;
+        
+    }
+    
+    .main__expand::before,.main::after{
+        content: '';
+        width: 100%;
+        height: 765px; 
+        position:absolute;      
+        left: 0;
+        top: 0;    
+    }
+    
+    .main__expand::before{               
+        background: url("../images/image5.png");    
+        background-size: cover; 
+        z-index: -10;    
+    }
+    .main__expand::after{  
+        background-color: rgba(24, 24, 24, 0.7);
+        z-index: -5;
+    }
+    
