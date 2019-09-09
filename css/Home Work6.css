@@ -109,7 +109,7 @@ body,html{
 }
 .nav__link{
     text-decoration: none;
-    color:white;
+    color:#f07970;
     text-transform: uppercase;
     font-size: 16px;  
 }
@@ -118,7 +118,7 @@ body,html{
     border-bottom:#f07970 5px solid;
     padding-bottom: 5px;
     cursor: pointer;
-    color:#f07970;
+    color:white;
    
 }
 
@@ -204,7 +204,7 @@ span{
     background: rgb(252,252,252);
     height: 100vh;
     position: relative;
-    width:1500px;
+    width:100%;
 }
 
 .signs__section__heading{
@@ -770,9 +770,8 @@ span{
     height: 765px;
     margin: 0 auto;
     position: relative; 
-    background-color: ;
+   
    }
-
 .advertising__section__wrap{
     display:flex;
     flex-direction:row-reverse;
@@ -981,9 +980,7 @@ margin-top:45px;
     padding-top:10px;
 }
 
-.bottom__button{
 
-}
 .bottom__image{
 margin:0 auto;
 display: block;
@@ -1000,7 +997,7 @@ margin-top:60px;
     justify-content: center;
     padding-top:70px;
     justify-content: space-around;  
-    margin-right: 46px;
+   
 }
 .our__team__section{
     width: 100%;
@@ -1238,9 +1235,6 @@ height:45px;
         height:45px;
     }
 
-    .blocks__bottom__button{
-
-    }
     .blocks__bottom__image{
     margin:0 auto;
     display: block;

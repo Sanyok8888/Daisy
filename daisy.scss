@@ -1,0 +1,78 @@
+@mixin red__button{
+    background-color: #fc635e;
+    border: none;
+    color: #f2e2e2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display:block;
+    width:177px;
+    height:44px;
+    margin-top:25px;
+    border-radius: 7px;
+    font-weight:100;
+}
+
+@mixin image__parameters{
+    height:250px;
+    width:400px;
+}
+
+@mixin header{
+    height:52px;
+    color:rgb(130,130,130);
+    line-height: 10px;
+}
+
+@mixin paragraph__parameters{
+    align-items:center;
+    color:rgb(184,184,184);
+}
+
+@mixin section{
+    width: 100%;
+    height: 765px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+@mixin section__wrap{
+    display:flex;
+}
+
+.marketing__kit__section{
+    @include section; 
+}
+.marketing__kit__section__wrap{
+@include section__wrap;
+}
+
+.marketing__kit__text{
+    flex-direction:column;
+    width:45%;
+     font-size:16px;
+   padding-left:14%;
+   padding-top:150px;
+   display: flex;
+}
+.marketing__kit__header{
+@include header;
+}
+
+.marketing__kit__paragraph{
+@include paragraph__parameters;
+}
+
+.marketing__kit__btn{
+@include red__button;
+}
+
+.marketing__kit__image{
+padding-top:135px;
+}
+
+.image__marketing__kit{
+@include image__parameters;
+}
